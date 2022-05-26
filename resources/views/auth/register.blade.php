@@ -15,7 +15,7 @@
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- PAGE TITLE HERE -->
-	<title>Register</title>
+	<title>Dompet : Payment Admin Template</title>
 	
 	<!-- FAVICONS ICON -->
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
@@ -36,41 +36,23 @@
 										<a href="index.html"><img src="images/logo-full.png" alt=""></a>
 									</div>
                                     <h4 class="text-center mb-4">Sign up your account</h4>
-                                    <form action="register" method="POST">
+                                    <form action="{{ route('register') }}" method="Post">
                                         @csrf
                                         <div class="mb-3">
                                             <label class="mb-1"><strong>Username</strong></label>
-                                            <input type="text" class="form-control @error('name') is-invalid @enderror" placeholder="username"
-                                            name="name" value="{{ old('name') }}" required autocomplete="name" autofocus />
-                                            @error('name')
-                                            <span class="invalid-feedback" role="alert">
-                                              <strong>{{ $message }}</strong>
-                                            </span>
-                                            @enderror
+                                            <input type="text" class="form-control" placeholder="username" name="name">
                                         </div>
                                         <div class="mb-3">
                                             <label class="mb-1"><strong>Email</strong></label>
-                                            <input type="email" name="email" class="form-control" placeholder="" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="mb-1"><strong>Nic</strong></label>
-                                            <input type="text" name="nic" class="form-control" placeholder="" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="mb-1"><strong>Phone</strong></label>
-                                            <input type="number" class="form-control" placeholder="" name="phone" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="mb-1"><strong>Age</strong></label>
-                                            <input type="number" class="form-control" placeholder="" name="age" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="mb-1"><strong>Address</strong></label>
-                                            <input type="text" class="form-control" placeholder="" name="address" required >
+                                            <input type="email" class="form-control" placeholder="hello@example.com" name="email">
                                         </div>
                                         <div class="mb-3">
                                             <label class="mb-1"><strong>Password</strong></label>
-                                            <input type="password" class="form-control" value="Password" required name="password">
+                                            <input type="password" class="form-control" value="" name="password">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="mb-1"><strong>Confirm Password</strong></label>
+                                            <input type="password" class="form-control" value="" name="password_confirmation">
                                         </div>
                                         <div class="text-center mt-4">
                                             <button type="submit" class="btn btn-primary btn-block">Sign me up</button>

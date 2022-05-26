@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 
@@ -16,7 +15,7 @@
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- PAGE TITLE HERE -->
-	<title>Login</title>
+	<title>Dompet : Payment Admin Template</title>
 	
 	<!-- FAVICONS ICON -->
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
@@ -37,15 +36,15 @@
 										<a href="index.html"><img src="images/logo-full.png" alt=""></a>
 									</div>
                                     <h4 class="text-center mb-4">Sign in your account</h4>
-                                    <form method="POST" action="{{ route('login') }}">
+                                    <form action="{{ route('login') }}" method="post">
                                         @csrf
                                         <div class="mb-3">
                                             <label class="mb-1"><strong>Email</strong></label>
-                                            <input type="email" class="form-control" name="email" value="">
+                                            <input type="email" class="form-control" name="email">
                                         </div>
                                         <div class="mb-3">
                                             <label class="mb-1"><strong>Password</strong></label>
-                                            <input type="password" class="form-control" value="" name="password">
+                                            <input type="password" class="form-control"  name="password">
                                         </div>
                                         <div class="row d-flex justify-content-between mt-4 mb-2">
                                             <div class="mb-3">
@@ -84,5 +83,4 @@
     <script src="js/dlabnav-init.js"></script>
 	<script src="js/styleSwitcher.js"></script>
 </body>
-</html>
 </html>
