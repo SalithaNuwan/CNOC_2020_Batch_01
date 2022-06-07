@@ -9,9 +9,10 @@
     <div class="container-fluid">
         <div class="row page-titles">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item active"><a href="javascript:void(0)">Dashboard</a></li>
+                <li class="breadcrumb-item active"><a href="javascript:void(0)">Admin</a></li>
+                <li class="breadcrumb-item"><a href="javascript:void(0)">Tasks</a></li>
             </ol>
-        </div>
+        </div>>
         <!-- row -->
         <div class="col-12">
             <div class="card">

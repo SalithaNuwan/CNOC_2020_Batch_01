@@ -1,6 +1,7 @@
 @extends('layouts.main.mainApp')
 
 @section('content')
+
 <!--**********************************
             Content body start
         ***********************************-->
@@ -9,14 +10,16 @@
     <div class="container-fluid">
         <div class="row page-titles">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item active"><a href="javascript:void(0)">Dashboard</a></li>
+                <li class="breadcrumb-item active"><a href="javascript:void(0)">Admin</a></li>
+                <li class="breadcrumb-item"><a href="javascript:void(0)">Users</a></li>
             </ol>
         </div>
+       
         <!-- row -->
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Task List</h4>
+                    <h4 class="card-title">User List</h4>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -24,31 +27,31 @@
                             <thead>
                                 <tr>
                                     <th>Id</th>
-                                    <th>User</th>
-                                    <th>Title</th>
-                                    <th>Deascription</th>
-                                    <th>Date</th>
-                                    <th>Last update</th>
-                                    <th>Status </th>
+                                    <th>Name</th>
+                                    <th>Role</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Address</th>
+                                    <th>NIC</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
+                           
                                 <tr>
-                                  <td>1</td>
-                                  <td>2</td>
-                                  <td>3</td>
-                                  <td>4</td>
-                                  <td>5</td>
-                                  <td>5</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                
                                     <td>
-                                        <span class="badge light badge-danger"></span>
-                                     
-                                    </td>
-                                    <td>
-                                        <a href="" class="btn btn-info shadow btn-xs ">Start</a>
+
                                     </td>
                                 </tr>
+                              
                             </tbody>
                         </table>
                     </div>
